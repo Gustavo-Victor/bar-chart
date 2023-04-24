@@ -31,6 +31,7 @@ Clique [aqui](https://codepen.io/gustavo_victor/pen/wvYJPML?editors=0011) para v
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)  
 - [JS](https://www.javascript.com/)
+- [D3](https://d3js.org/)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - Fontes: [Roboto (400, 500)](https://fonts.google.com/specimen/Roboto)
 
