@@ -1,0 +1,99 @@
+:root {
+    --body-bg-color: #708090;
+    --default-font: 'Roboto', sans-serif;
+    --chart-bg-color: #fff;
+    --border-color: #000;
+    --default-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.7);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--body-bg-color);
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+
+    background-size: 64px 128px;
+    overflow: hidden;
+}
+
+.main .container {
+    height: 560px;
+    width: 950px;
+    max-width: 90vw;
+    background-color: var(--chart-bg-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    align-self: center;
+    box-shadow: var(--default-box-shadow);
+}
+
+.main .container .title {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.main .container .visHolder {
+    overflow: auto;
+    position: relative;
+    top: 1em;
+}
+
+#tooltip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    font: 12px;
+    background: lightsteelblue;
+    box-shadow: 1px 1px 10px;
+    border-radius: 2px;
+    pointer-events: none;
+}
+
+.overlay {
+    position: absolute;
+    background: var(--chart-bg-color);
+    pointer-events: none;
+}
+
+#y-axis path {
+    stroke: var(--border-color);
+    stroke-width: 1;
+    fill: none;
+}
+
+#x-axis path {
+    stroke: var(--border-color);
+    stroke-width: 1;
+    fill: none;
+}
+
+.info {
+    font-size: 0.8em;
+}
+
+
+@media (min-width: 1000px) {
+    .main .container {
+        box-shadow: var(--default-box-shadow);
+    }
+}
